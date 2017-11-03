@@ -1,24 +1,26 @@
 <template>
-  <div>
+  <div id="wrap">
     <epet-header></epet-header>
-    <div class="nav">
-      <div class="nav-item">
-        <router-link to="/test">hello</router-link>
-      </div>
-    </div>
-    <router-view></router-view>
+    <epet-main></epet-main>
+    <epet-footer></epet-footer>
   </div>
 </template>
 
 <script>
   import header from './components/header/header.vue'
+  import footer from './components/footer/footer-nav.vue'
+  import main from './components/main/main.vue'
   export default{
     components: {
-      'epet-header': header
+      'epet-header': header,
+      'epet-footer': footer,
+      'epet-main': main
     }
   }
 </script>
 
-<style>
-
+<style lang="stylus" ref="stylesheet/stylus">
+  #wrap
+    height: 100%
+    overflow: hidden
 </style>

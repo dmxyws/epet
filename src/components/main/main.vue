@@ -1,7 +1,7 @@
 <template>
-  <div>
-    测试路由...
-  </div>
+    <div>
+      content区域
+    </div>
 </template>
 
 <script>

@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import app from './App.vue'
-import router from './router'
+import 'normalize.css'
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  render: h => h(app),
-  router
+  render: h => h(app)
 })

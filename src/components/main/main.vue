@@ -2,7 +2,7 @@
     <div class="main-wraper">
       <div class="all-double">
         <div class="db-schedule">
-
+          <img src="./img/double-schedule.jpg">
         </div>
       </div>
     </div>
@@ -31,6 +31,7 @@
       margin-bottom 45px
       background: purple
       .db-schedule
-        width 100%
-        height px2rem(100)
+        font-size 0
+        img
+          width 100%
 </style>

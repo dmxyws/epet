@@ -6,7 +6,7 @@
           <a href="javascript:;">
             <span>狗狗站</span>
             <span>|</span>
-            <span>重庆</span>
+            <span  class="s3">重庆</span>
             <i></i>
           </a>
         </div>
@@ -45,17 +45,25 @@
           margin-right: 20px;
           position: relative;
           font-size: 14px;
-          float: left;
           line-height 1.6
           a
-            font-size: 13px;
             color: #898989;
             text-decoration: none;
             -webkit-tap-highlight-color: rgba(0,0,0,0);
+            .s3
+              font-size: 13px
+          i
+            position: absolute;
+            top: 10px;
+            right: -11px;
+            border-width: 4px;
+            font-size: 0;
+            line-height: 0;
+            border-style: solid dotted dotted;
+            border-color: #898989 transparent transparent;
         .h-search
           position: relative;
           -webkit-box-flex: 1;
-          display: block;
           margin 0
           a
             input
@@ -77,7 +85,7 @@
               bottom: 0;
               margin: auto 0;
               background: url("./img/search.png") no-repeat
-              background-size 100% 100%
+              background-size 100% auto
         .h-msg
           display: block;
           color: #333;

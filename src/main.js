@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import app from './App.vue'
-import 'normalize.css'
+// import 'normalize.css'
 
 /* eslint-disable no-new */
 new Vue({

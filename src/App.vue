@@ -11,6 +11,14 @@
   import footer from './components/footer/footer-nav.vue'
   import main from './components/main/main.vue'
   export default{
+    mounted () {
+      (function () {
+        let width = document.documentElement.clientWidth
+        let styleNode = document.createElement('style')
+        styleNode.innerHTML = 'html{font-size: ' + width / 16 + 'px !important;}'
+        document.head.appendChild(styleNode)
+      })()
+    },
     components: {
       'epet-header': header,
       'epet-footer': footer,
@@ -20,6 +28,7 @@
 </script>
 
 <style lang="stylus" ref="stylesheet/stylus">
+  $rem = 46.875rem
   #wrap
     height: 100%
     overflow: hidden

@@ -109,6 +109,7 @@
     position absolute
     left 0
     top 0
+    width 100%
     z-index 2
     .h-main
       height: 51px
@@ -117,6 +118,7 @@
         height: 41px
         padding: 8px 0;
         background: #fff;
+        font-size 13px
         text-align: center;
         display: -webkit-box;
         -webkit-box-align: center;

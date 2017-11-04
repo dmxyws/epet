@@ -19,11 +19,89 @@
         <a href="javascript:;" class="h-msg"><img src="./img/mydope.png"></a>
       </div>
     </div>
+    <div class="nav-wrap">
+      <ul class="nav-list">
+        <li class="nav-item on">
+          <a href="javascript:;">
+            <span class="rela">
+              <span>首页</span>
+              <i></i>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:;">
+            <span class="rela">
+              <span>服饰城</span>
+              <i></i>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:;">
+            <span class="rela">
+              <span>狗狗主粮</span>
+              <i></i>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:;">
+            <span class="rela">
+              <span>医疗保健</span>
+              <i></i>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:;">
+            <span class="rela">
+              <span>零食玩具</span>
+              <i></i>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:;">
+            <span class="rela">
+              <span>日用外出</span>
+              <i></i>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:;">
+            <span class="rela">
+              <span>美容香波</span>
+              <i></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
-  export default{}
+  export default{
+    mounted () {
+      function preNavWidth () {
+        let width = document.documentElement.clientWidth
+        let navItem = document.querySelectorAll('.header-wraper .nav-wrap .nav-list .nav-item')
+        console.log(navItem.length, width)
+        if (width === 414) {
+          for (let i = 0; i < navItem.length; i++) {
+            navItem[i].style.width = width / 5 - 0.46 + 'px'
+          }
+        } else {
+          for (let i = 0; i < navItem.length; i++) {
+            navItem[i].style.width = width / 5 - 0.5 + 'px'
+          }
+        }
+      }
+      preNavWidth()
+    }
+  }
 </script>
 
 <style lang="stylus" ref="stylesheet/stylus">
@@ -96,4 +174,36 @@
             margin-left: 10px;
             border: 0;
             vertical-align: middle;
+    .nav-wrap
+      width 100%
+      overflow hidden
+      .nav-list
+        float left
+        white-space nowrap
+        font-size 0
+        .nav-item
+          height: 36px
+          display inline-block
+          &.on
+            span
+              display inline-block
+              color #459d36
+            i
+              background: #459d36
+          a
+            display: block
+            height: 100%
+            width: 100%
+            line-height: 36px
+            text-align center
+            font-size 14px
+            color: #666
+            .rela
+              position relative
+              i
+                position: absolute
+                left -10%
+                bottom 1px
+                width 120%
+                height: 2px
 </style>

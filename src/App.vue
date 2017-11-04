@@ -28,8 +28,7 @@
 </script>
 
 <style lang="stylus" ref="stylesheet/stylus">
-  $rem = 46.875rem
   #wrap
-    height: 100%
+    /*height: 100%*/
     overflow: hidden
 </style>

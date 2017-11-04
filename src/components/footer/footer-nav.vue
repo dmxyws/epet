@@ -16,6 +16,10 @@
 <style lang="stylus" ref="stylesheet/stylus">
   @import "../../common/stylus/mixin.styl"
   .footer-wrap
+    position absolute
+    left 0
+    bottom 0
+    z-index 2
     width: 100%
     .nav-list
       overflow hidden
@@ -24,7 +28,7 @@
         position relative
         float left
         width: 25%
-        height 55px
+        height 45px
         .index-a
           vertical()
           ft-bg-image("./img/img.png",0,0)

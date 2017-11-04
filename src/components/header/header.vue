@@ -106,6 +106,10 @@
 
 <style lang="stylus" ref="stylesheet/stylus">
   .header-wraper
+    position absolute
+    left 0
+    top 0
+    z-index 2
     .h-main
       height: 51px
       padding: 5px 10px

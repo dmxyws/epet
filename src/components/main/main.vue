@@ -119,17 +119,31 @@
           </div>
         </div>
       </div>
+      <column></column>
+      <div class="footer">
+        <div class="ft-about">
+          <span><a href="javascript:;" class="on">触屏版</a></span>
+          <span><a href="javascript:;">手机客户端</a></span>
+          <span><a href="javascript:;">关于我们</a></span>
+          <span><a href="javascript:;">联系我们</a></span>
+        </div>
+        <div class="ft-copy">© wap.epet.com 版权：重庆易宠科技有限公司</div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+  import column from '../column/column.vue'
   export default{
     mounted () {
       let main = document.querySelector('.main-wraper')
       main.addEventListener('touchstart', function () {
         console.log('hello world')
       })
+    },
+    components: {
+      column
     }
   }
 </script>
@@ -137,7 +151,6 @@
 <style lang="stylus" ref="stylesheet/stylus">
   px2rem($num)
     $num/ (750 / 16) rem
-
   .main-wraper
     position relative
     overflow hidden
@@ -264,4 +277,23 @@
                         font-size 14px
                     .save
                       font-size 12px
+      .footer
+        margin-top 14px
+        width 100%
+        height 86px
+        line-height 1.6
+        .ft-about
+          font-size 14px
+          padding 15px 0 5px
+          text-align center
+          span
+            padding-right 10px
+            a
+              color #333
+              &.on
+                color red
+        .ft-copy
+          font-size 12px
+          text-align center
+          padding-bottom 25px
 </style>

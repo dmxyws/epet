@@ -119,7 +119,19 @@
           </div>
         </div>
       </div>
-      <column></column>
+      <div class="db-column-wrap">
+        <div class="cl-title cl-pre"><img src="./img/tit-prevent.jpg"></div>
+        <prevent></prevent>
+        <div class="cl-title cl-etem"><img src="./img/tit-eteam.jpg"></div>
+        <div class="cl-title cl-spe"><img src="./img/tit-brand.jpg"></div>
+        <brand></brand>
+        <div class="cl-title cl-spe"><img src="./img/tit-special.jpg"></div>
+        <special></special>
+        <div class="cl-title cl-cra">
+          <img src="./img/tit-crazy.jpg">
+        </div>
+
+      </div>
       <div class="footer">
         <div class="ft-about">
           <span><a href="javascript:;" class="on">触屏版</a></span>
@@ -134,7 +146,9 @@
 </template>
 
 <script>
-  import column from '../column/column.vue'
+  import prevent from '../column/cl-prevent.vue'
+  import brand from '../column/cl-brand.vue'
+  import special from '../column/cl-special.vue'
   export default{
     mounted () {
       let main = document.querySelector('.main-wraper')
@@ -143,7 +157,9 @@
       })
     },
     components: {
-      column
+      prevent,
+      brand,
+      special
     }
   }
 </script>
@@ -277,6 +293,13 @@
                         font-size 14px
                     .save
                       font-size 12px
+      .db-column-wrap
+        width 100%
+        .cl-title
+          width 100%
+          font-size 0
+          img
+            width 100%
       .footer
         margin-top 14px
         width 100%

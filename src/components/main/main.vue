@@ -13,36 +13,20 @@
             </mt-swipe-item>
           </mt-swipe>
         </div>
-        <div class="db-wallpaper">
-          <a href="javascript:;"><img src="./img/wallpaper.jpg"></a>
+        <div class="db-wallpaper" v-if="double11.banner_wallpaper">
+          <a href="javascript:;"><img :src="double11.banner_wallpaper.image"></a>
         </div>
         <div class="db-column-nav">
-          <ul class="nav-list">
-            <li class="fl">
-              <a href="javascript:;"><img src="./img/column-nav1.jpg"></a></li>
-            <li class="fl">
-              <a href="javascript:;"><img src="./img/column-nav2.jpg"></a></li>
-            <li class="fl">
-              <a href="javascript:;"><img src="./img/column-nav3.jpg"></a></li>
-            <li class="fl">
-              <a href="javascript:;"><img src="./img/column-nav4.jpg"></a></li>
-          </ul>
-          <ul class="nav-list">
-            <li class="fl">
-              <a href="javascript:;"><img src="./img/column-nav5.jpg"></a></li>
-            <li class="fl">
-              <a href="javascript:;"><img src="./img/column-nav6.jpg"></a></li>
-            <li class="fl">
-              <a href="javascript:;"><img src="./img/column-nav7.jpg"></a></li>
-            <li class="fl">
-              <a href="javascript:;"><img src="./img/column-nav8.jpg"></a></li>
+          <ul class="nav-list" v-for="row in double11.menu_column">
+            <li class="fl" v-for="col in row">
+              <a :href="col.param"><img :src="col.image"></a></li>
           </ul>
         </div>
-        <div class="db-swiper">
-          <a href="javascript:;" class="swiper-slide"><img src="./img/swiper.jpg"></a>
+        <div class="db-swiper" v-if="double11.double11_1">
+          <a :href="double11.double11_1.param" class="swiper-slide"><img :src="double11.double11_1.image"></a>
         </div>
-        <div class="db-discount db-swiper">
-          <a href="javascript:;" class="swiper-slide"><img src="./img/db-discount.jpg"></a>
+        <div class="db-discount db-swiper" v-if="double11.double11_2">
+          <a :href="double11.double11_2.param" class="swiper-slide"><img :src="double11.double11_2.image"></a>
         </div>
         <div class="db-daily-crazy">
           <div class="surprise">
@@ -113,20 +97,20 @@
           </div>
         </div>
         <div class="db-column-wrap">
-          <div class="cl-title cl-pre"><img src="./img/tit-prevent.jpg"></div>
+          <div class="cl-title cl-pre" v-if="double11.prevent"><img :src="double11.prevent.image"></div>
           <prevent></prevent>
-          <div class="cl-title cl-etem"><img src="./img/tit-eteam.jpg"></div>
-          <div class="cl-title cl-spe"><img src="./img/tit-brand.jpg"></div>
+          <div class="cl-title cl-etem" v-if="double11.eteam"><img :src="double11.eteam.image"></div>
+          <div class="cl-title cl-bra" v-if="double11.brand"><img :src="double11.brand.image"></div>
           <brand></brand>
-          <div class="cl-title cl-spe"><img src="./img/tit-special.jpg"></div>
+          <div class="cl-title cl-spe" v-if="double11.special"><img :src="double11.special.image"></div>
           <special></special>
-          <div class="cl-title cl-cra">
-            <img src="./img/tit-crazy.jpg">
+          <div class="cl-title cl-cra" v-if="double11.ecrazy">
+            <img :src="double11.ecrazy.image">
           </div>
           <div class="video-wraper">
             <div class="video-img">
-              <a href="javascript:;"><img src="./img/video.jpg"></a>
-              <div class="video-bt"><img src="./img/video-bot.jpg"></div>
+              <a href="javascript:;" v-if="double11.video"><img :src="double11.video.first_img"></a>
+              <div class="video-bt" v-if="double11.video_bottom"><img :src="double11.video_bottom.image"></div>
             </div>
           </div>
         </div>

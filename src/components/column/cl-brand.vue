@@ -1,33 +1,26 @@
 <template>
-  <div class="column-wrap">
-    <div class="divboximg flex">
-      <div class="divimg">
-        <a href="javascript:;"><img src="./img/out-1.jpg"></a>
-        <a href="javascript:;"><img src="./img/out-2.jpg"></a>
+  <div class="wraper">
+    <div class="column-wrap" v-for="gro in bragroup">
+      <div class="divboximg flex">
+        <div class="divimg" v-for="bra in gro.brands">
+          <a :href="b.param" v-for="b in bra"><img :src="b.image"></a>
+        </div>
       </div>
-      <div class="divimg">
-        <a href="javascript:;"><img src="./img/out-3.jpg"></a>
-        <a href="javascript:;"><img src="./img/out-4.jpg"></a>
-      </div>
-      <div class="divimg">
-        <a href="javascript:;"><img src="./img/out-5.jpg"></a>
-        <a href="javascript:;"><img src="./img/out-6.jpg"></a>
-      </div>
-      <div class="divimg">
-        <a href="javascript:;"><img src="./img/out-brand.jpg"></a>
-      </div>
-    </div>
-    <div class="bot-row">
-      <div class="bot w50">
-        <a href="javascript:;"><img src="./img/row-1.jpg"></a>
-        <a href="javascript:;"><img src="./img/row-2.jpg"></a>
+      <div class="bot-row">
+        <div class="bot w50">
+          <a :href="disb.param" v-for="disb in gro.dis_brands"><img :src="disb.image"></a>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default{}
+  export default{
+    props: {
+      bragroup: Array
+    }
+  }
 </script>
 
 <style lang="stylus" ref="stylesheet/stylus">

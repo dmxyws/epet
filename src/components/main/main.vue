@@ -98,12 +98,12 @@
         </div>
         <div class="db-column-wrap">
           <div class="cl-title cl-pre" v-if="double11.prevent"><img :src="double11.prevent.image"></div>
-          <prevent></prevent>
+          <prevent :pregoods="double11.prevent_goods"></prevent>
           <div class="cl-title cl-etem" v-if="double11.eteam"><img :src="double11.eteam.image"></div>
           <div class="cl-title cl-bra" v-if="double11.brand"><img :src="double11.brand.image"></div>
-          <brand></brand>
+          <brand :bragroup="double11.brand_group"></brand>
           <div class="cl-title cl-spe" v-if="double11.special"><img :src="double11.special.image"></div>
-          <special></special>
+          <special :specolumn="double11.special_column"></special>
           <div class="cl-title cl-cra" v-if="double11.ecrazy">
             <img :src="double11.ecrazy.image">
           </div>

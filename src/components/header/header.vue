@@ -4,9 +4,9 @@
       <div class="h-inner">
         <div class="h-location">
           <a href="javascript:;">
-            <span>狗狗站</span>
+            <span>{{location.loc_name}}</span>
             <span>|</span>
-            <span  class="s3">重庆</span>
+            <span  class="s3">{{location.city}}</span>
             <i></i>
           </a>
         </div>
@@ -19,60 +19,12 @@
         <a href="javascript:;" class="h-msg"><img src="./img/mydope.png"></a>
       </div>
     </div>
-    <div class="nav-wrap">
+    <div class="nav-wrap" ref="navWrap">
       <ul class="nav-list">
-        <li class="nav-item on">
+        <li class="nav-item" :class="{on: m.menu_type == 1}" v-for="m in menu">
           <a href="javascript:;">
             <span class="rela">
-              <span>首页</span>
-              <i></i>
-            </span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="javascript:;">
-            <span class="rela">
-              <span>服饰城</span>
-              <i></i>
-            </span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="javascript:;">
-            <span class="rela">
-              <span>狗狗主粮</span>
-              <i></i>
-            </span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="javascript:;">
-            <span class="rela">
-              <span>医疗保健</span>
-              <i></i>
-            </span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="javascript:;">
-            <span class="rela">
-              <span>零食玩具</span>
-              <i></i>
-            </span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="javascript:;">
-            <span class="rela">
-              <span>日用外出</span>
-              <i></i>
-            </span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="javascript:;">
-            <span class="rela">
-              <span>美容香波</span>
+              <span>{{m.menu_name}}</span>
               <i></i>
             </span>
           </a>
@@ -83,23 +35,38 @@
 </template>
 
 <script>
+  import BScroll from 'better-scroll'
   export default{
-    mounted () {
-      function preNavWidth () {
-        let width = document.documentElement.clientWidth
-        let navItem = document.querySelectorAll('.header-wraper .nav-wrap .nav-list .nav-item')
-        console.log(navItem.length, width)
-        if (width === 414) {
-          for (let i = 0; i < navItem.length; i++) {
-            navItem[i].style.width = width / 5 - 0.46 + 'px'
+    props: {
+      location: Object,
+      menu: Array
+    },
+    methods: {
+      _initialMenu () {
+        this.$nextTick(() => {
+          let width = document.documentElement.clientWidth
+          let navItem = document.querySelectorAll('.header-wraper .nav-wrap .nav-list .nav-item')
+          console.log(navItem.length, width)
+          if (width === 414) {
+            for (let i = 0; i < navItem.length; i++) {
+              navItem[i].style.width = width / 5 - 0.46 + 'px'
+            }
+          } else {
+            for (let i = 0; i < navItem.length; i++) {
+              navItem[i].style.width = width / 5 - 0.5 + 'px'
+            }
           }
-        } else {
-          for (let i = 0; i < navItem.length; i++) {
-            navItem[i].style.width = width / 5 - 0.5 + 'px'
-          }
-        }
+          /* eslint-disable no-new */
+          new BScroll(this.$refs.navWrap, {
+            scrollX: true
+          })
+        })
       }
-      preNavWidth()
+    },
+    watch: {
+      menu (newValue, oldValue) {
+        this._initialMenu()
+      }
     }
   }
 </script>
@@ -110,6 +77,7 @@
     left 0
     top 0
     width 100%
+    background: #FFF
     z-index 2
     .h-main
       height: 51px

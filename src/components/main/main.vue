@@ -3,24 +3,15 @@
     <main-header :location="location" :menu="menu"></main-header>
     <div class="double_wraper" ref="doubleWraper">
       <div class="all-double">
-        <div class="db-schedule">
-          <img src="./img/double-schedule.jpg">
+        <div class="db-schedule" v-if="double11.schedule">
+          <img :src="double11.schedule.image">
         </div>
         <div class="db-banner">
-          <ul class="banner-list">
-            <li class="banner-item">
-              <a href="javascript:;"><img src="./img/banner1.jpg"></a>
-            </li>
-            <li class="banner-item">
-              <a href="javascript:;"><img src="./img/banner2.jpg"></a>
-            </li>
-            <li class="banner-item">
-              <a href="javascript:;"><img src="./img/banner3.jpg"></a>
-            </li>
-            <li class="banner-item">
-              <a href="javascript:;"><img src="./img/banner4.jpg"></a>
-            </li>
-          </ul>
+          <mt-swipe :auto="2000" v-if="double11.banner">
+            <mt-swipe-item :key="index" v-for="(item, index) in double11.banner">
+              <a :class="'blo'" :href="item.param"><img :src="item.image"></a>
+            </mt-swipe-item>
+          </mt-swipe>
         </div>
         <div class="db-wallpaper">
           <a href="javascript:;"><img src="./img/wallpaper.jpg"></a>
@@ -165,7 +156,7 @@
       return {
         location: {},
         menu: [],
-        schedule: {}
+        double11: {}
       }
     },
     mounted () {
@@ -176,21 +167,16 @@
             const mainData = result.data
             this.location = mainData.location
             this.menu = mainData.menu
-            const data = mainData.data
-            this.schedule = data.schedule.value[0]
-            console.log(this.schedule.image)
-            setTimeout(() => {
+            this.double11 = mainData.data
+            this.$nextTick(() => {
               /* eslint-disable no-new */
               new BScroll(this.$refs.doubleWraper, {
-                bounce: false
+                bounce: false,
+                click: true
               })
-            }, 100)
+            })
           }
         })
-      let main = document.querySelector('.main-wraper')
-      main.addEventListener('touchstart', function () {
-        console.log('hello world')
-      })
     },
     components: {
       'main-header': header,
@@ -221,17 +207,11 @@
             width 100%
         .db-banner
           width: 100%
-          overflow hidden
-          .banner-list
-            white-space nowrap
-            float left
-            font-size 0
-            .banner-item
-              display inline-block
-              a
-                display block
-                img
-                  width px2rem(750);
+          height: px2rem(320)
+          .blo
+            display block
+            img
+              width 100%
         .db-wallpaper
           font-size 0
           a

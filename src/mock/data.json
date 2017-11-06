@@ -35,116 +35,86 @@
   ],
   "data": {
     "schedule": {
-      "type": "1",
-      "type_name": "图片轮播广告",
-      "value": [
-        {
-          "image": "./img/double-schedule.jpg",
-          "param": ""
-        }
-      ]
+      "image": "https://img2.epetbar.com/nowater/2017-11/02/09/2ffa23a2d9a9c51b76c45521485f4593.jpg@!water"
     },
-    "banner": {
-      "type": "1",
-      "type_name": "图片轮播广告",
-      "value": [
-        {
-          "image": "./img/banner1.jpg",
-          "param": "https://sale.epet.com/m/1711/presale.html?pettype=dog&fw=0"
-        },
-        {
-          "image": "./img/banner2.jpg",
-          "param": "https://sale.epet.com/m/1711/main.html?fw=0"
-        },
-        {
-          "image": "./img/banner3.jpg",
-          "param": "http://wap.epet.com/zt/promotion/main.html?id=MjY%3D&fw=0"
-        },
-        {
-          "image": "./img/banner4.jpg",
-          "param": "http://wap.epet.com/zt/promotion/main.html?id=Mjg%3D&fw=0"
-        }
-      ]
-    },
+    "banner": [
+      {
+        "image": "https://img2.epetbar.com/nowater/2017-10/27/13/c298e466911b5691a4c04b7f4b866900.jpg@!water",
+        "param": "https://sale.epet.com/m/1711/presale.html?pettype=dog&fw=0"
+      },
+      {
+        "image": "https://img2.epetbar.com/nowater/2017-10/27/13/619290e2f2e4cf14f4d1f58edd21691f.jpg@!water",
+        "param": "https://sale.epet.com/m/1711/main.html?fw=0"
+      },
+      {
+        "image": "https://img2.epetbar.com/nowater/2017-10/31/23/56027336f07cda97158d048dd83d2d7d.jpg@!water",
+        "param": "http://wap.epet.com/zt/promotion/main.html?id=MjY%3D&fw=0"
+      },
+      {
+        "image": "https://img2.epetbar.com/nowater/2017-11/02/09/e21c878b6a1ac402ecb9f4607525b500.jpg@!water",
+        "param": "http://wap.epet.com/zt/promotion/main.html?id=Mjg%3D&fw=0"
+      },
+      {
+        "image": "https://img2.epetbar.com/nowater/2017-11/02/08/32e0f2085ab94b2458a5792b3053a2dc.jpg@!water",
+        "param": "http://wap.epet.com/zt/promotion/main.html?id=Mjg%3D&fw=0"
+      }
+    ],
     "banner_wallpaper": {
-      "type": "1",
-      "type_name": "图片轮播广告",
-      "value": [
+      "image": "https://img2.epetbar.com/nowater/2017-10/27/13/70d8e59532caeaaf83052a1829a5b8c8.jpg@!water"
+    },
+    "menu_column": [
+      [
         {
-          "image": "./img/wallpaper.jpg",
-          "param": ""
+          "name": "E宠团",
+          "image": "./img/column-nav1.jpg",
+          "param": "http://wap.epet.com/group/main.html?pet_type=dog&fw=0"
+        },
+        {
+          "name": "品牌特卖",
+          "image": "./img/column-nav2.jpg",
+          "param": "http://wap.epet.com/brandsale.html?pet_type=dog&fw=0"
+        },
+        {
+          "name": "E宠国际",
+          "image": "./img/column-nav3.jpg",
+          "param": "http://wap.epetht.com/guide.html?pet_type=dog&fw=0&pet_type=dog"
+        },
+        {
+          "name": "体验馆",
+          "image": "./img/column-nav4.jpg",
+          "param": "http://wap.epet.com/trial/?pet_type=dog&fw=0"
+        }
+      ],
+      [
+        {
+          "name": "清仓特价",
+          "image": "./img/column-nav5.jpg",
+          "param": "http://wap.epet.com/activity/cleargoods.html?pet_type=dog&fw=0"
+        },
+        {
+          "name": "潮品视频",
+          "image": "./img/column-nav6.jpg",
+          "param": "https://wap.epet.com/main.html?menu_param=121&is_single=1&pet_type=dog&fw=0"
+        },
+        {
+          "name": "新汪课堂",
+          "image": "./img/column-nav7.jpg",
+          "param": "https://wap.epet.com/main.html?menu_param=4&is_single=1&pet_type=dog&fw=0"
+        },
+        {
+          "name": "新品周刊",
+          "image": "./img/column-nav8.jpg",
+          "param": "https://sale.epet.com/m/mould/activity/ztMjQ5Mw%3D%3D.html?tid=2493&version=356&fw=2&pet_type=dog"
         }
       ]
-    },
-    "menu_column": {
-      "type": "3",
-      "type_name": "栏目菜单",
-      "menu": [
-        [
-          {
-            "name": "E宠团",
-            "image": "./img/column-nav1.jpg",
-            "param": "http://wap.epet.com/group/main.html?pet_type=dog&fw=0"
-          },
-          {
-            "name": "品牌特卖",
-            "image": "./img/column-nav2.jpg",
-            "param": "http://wap.epet.com/brandsale.html?pet_type=dog&fw=0"
-          },
-          {
-            "name": "E宠国际",
-            "image": "./img/column-nav3.jpg",
-            "param": "http://wap.epetht.com/guide.html?pet_type=dog&fw=0&pet_type=dog"
-          },
-          {
-            "name": "体验馆",
-            "image": "./img/column-nav4.jpg",
-            "param": "http://wap.epet.com/trial/?pet_type=dog&fw=0"
-          }
-        ],
-        [
-          {
-            "name": "清仓特价",
-            "image": "./img/column-nav5.jpg",
-            "param": "http://wap.epet.com/activity/cleargoods.html?pet_type=dog&fw=0"
-          },
-          {
-            "name": "潮品视频",
-            "image": "./img/column-nav6.jpg",
-            "param": "https://wap.epet.com/main.html?menu_param=121&is_single=1&pet_type=dog&fw=0"
-          },
-          {
-            "name": "新汪课堂",
-            "image": "./img/column-nav7.jpg",
-            "param": "https://wap.epet.com/main.html?menu_param=4&is_single=1&pet_type=dog&fw=0"
-          },
-          {
-            "name": "新品周刊",
-            "image": "./img/column-nav8.jpg",
-            "param": "https://sale.epet.com/m/mould/activity/ztMjQ5Mw%3D%3D.html?tid=2493&version=356&fw=2&pet_type=dog"
-          }
-        ]
-      ]
-    },
+    ],
     "double11_1": {
-      "type": "1",
-      "type_name": "图片轮播广告",
-      "value": [
-        {
-          "image": "./img/swiper.jpg",
-          "param": "http://sale.epet.com/m/mould/activity/ztMjU4Ng%3D%3D.html?tid=2586&fw=0"
-        }
-      ]
+      "image": "https://img2.epetbar.com/nowater/2017-10/25/13/82fcfe755ff278e88aba996091514f70.jpg@!water",
+      "param": "http://sale.epet.com/m/mould/activity/ztMjU4Ng%3D%3D.html?tid=2586&fw=0"
     },
     "double11_2": {
-      "type": "1",
-      "type_name": "图片轮播广告",
-      "value": [
-        {
-          "image": "./img/db-discount.jpg",
-          "param": "https://sale.epet.com/m/1711/main.html?fw=0"
-        }
-      ]
+      "image": "https://img2.epetbar.com/nowater/2017-10/31/23/6c92bcc0e076a405b7ec985f3034de8c.jpg@!water",
+      "param": "https://sale.epet.com/m/1711/main.html?fw=0"
     },
     "prevent": {
       "type": "1",

@@ -6,7 +6,7 @@
         <div class="db-schedule" v-if="double11.schedule">
           <img :src="double11.schedule.image">
         </div>
-        <div class="db-banner">
+        <div class="db-banner" :class="{'hei-banner': double11.banner}">
           <mt-swipe :auto="2000" v-if="double11.banner">
             <mt-swipe-item :key="index" v-for="(item, index) in double11.banner">
               <a :class="'blo'" :href="item.param"><img :src="item.image"></a>
@@ -207,7 +207,8 @@
             width 100%
         .db-banner
           width: 100%
-          height: px2rem(320)
+          &.hei-banner
+            height: px2rem(320)
           .blo
             display block
             img

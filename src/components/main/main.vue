@@ -130,7 +130,12 @@
         <div class="cl-title cl-cra">
           <img src="./img/tit-crazy.jpg">
         </div>
-
+        <div class="video-wraper">
+          <div class="video-img">
+            <a href="javascript:;"><img src="./img/video.jpg"></a>
+            <div class="video-bt"><img src="./img/video-bot.jpg"></div>
+          </div>
+        </div>
       </div>
       <div class="footer">
         <div class="ft-about">
@@ -319,4 +324,16 @@
           font-size 12px
           text-align center
           padding-bottom 25px
+      .video-wraper
+        width 100%
+        .video-img
+          width 100%
+          a
+            display block
+            img
+              display block
+              width 100%
+          .video-bt
+            img
+              width 100%
 </style>

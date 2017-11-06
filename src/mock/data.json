@@ -1,0 +1,347 @@
+{
+  "location": {
+    "loc_name": "狗狗站",
+    "city": "重庆"
+  },
+  "menu": [
+    {
+      "menu_type": "0",
+      "menu_name": "首页"
+    },
+    {
+      "menu_type": "0",
+      "menu_name": "服饰城"
+    },
+    {
+      "menu_type": "0",
+      "menu_name": "狗狗主粮"
+    },
+    {
+      "menu_type": "0",
+      "menu_name": "医疗保险"
+    },
+    {
+      "menu_type": "0",
+      "menu_name": "零食玩具"
+    },
+    {
+      "menu_type": "0",
+      "menu_name": "日用外出"
+    },
+    {
+      "menu_type": "0",
+      "menu_name": "美容香波"
+    }
+  ],
+  "data": {
+    "schedule": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "banner": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        },
+        {
+          "image": "",
+          "param": ""
+        },
+        {
+          "image": "",
+          "param": ""
+        },
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "banner_wallpaper": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "menu_column": {
+      "type": "3",
+      "type_name": "栏目菜单",
+      "menu": [
+        {
+          "name": "E宠团",
+          "image": "",
+          "param": ""
+        },
+        {
+          "name": "品牌特卖",
+          "image": "",
+          "param": ""
+        },
+        {
+          "name": "E宠国际",
+          "image": "",
+          "param": ""
+        },
+        {
+          "name": "体验馆",
+          "image": "",
+          "param": ""
+        },
+        {
+          "name": "清仓特价",
+          "image": "",
+          "param": ""
+        },
+        {
+          "name": "潮品视频",
+          "image": "",
+          "param": ""
+        },
+        {
+          "name": "新汪课堂",
+          "image": "",
+          "param": ""
+        },
+        {
+          "name": "新品周刊",
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "double11_1": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "double11_2": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "prevent": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "prevent_goods": {
+      "type": "13",
+      "type_name": "通用广告模板",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        },
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "eteam": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "brand": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "brand_group": {
+      "type": "13",
+      "type_name": "通用广告模板",
+      "groups": [
+        {
+          "brands": [
+            [
+              {
+                "image": "",
+                "param": ""
+              },
+              {
+                "image": "",
+                "param": ""
+              }
+            ],
+            [
+              {
+                "image": "",
+                "param": ""
+              },
+              {
+                "image": "",
+                "param": ""
+              }
+            ],
+            [
+              {
+                "image": "",
+                "param": ""
+              }
+            ]
+          ],
+          "dis_brands": [
+            {
+              "image": "",
+              "param": ""
+            },
+            {
+              "image": "",
+              "param": ""
+            }
+          ]
+        },{
+          "brands": [
+            [
+              {
+                "image": "",
+                "param": ""
+              },
+              {
+                "image": "",
+                "param": ""
+              }
+            ],
+            [
+              {
+                "image": "",
+                "param": ""
+              },
+              {
+                "image": "",
+                "param": ""
+              }
+            ],
+            [
+              {
+                "image": "",
+                "param": ""
+              }
+            ]
+          ],
+          "dis_brands": [
+            {
+              "image": "",
+              "param": ""
+            },
+            {
+              "image": "",
+              "param": ""
+            }
+          ]
+        }
+      ]
+    },
+    "special": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "special_column": {
+      "type": "13",
+      "type_name": "通用广告模板",
+      "value": [
+        [
+          {
+            "image": "",
+            "param": ""
+          },
+          {
+            "image": "",
+            "param": ""
+          },
+          {
+            "image": "",
+            "param": ""
+          }
+        ],
+        [
+          {
+            "image": "",
+            "param": ""
+          },
+          {
+            "image": "",
+            "param": ""
+          },
+          {
+            "image": "",
+            "param": ""
+          }
+        ]
+      ]
+    },
+    "ecrazy": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    },
+    "video": {
+      "type": "17",
+      "type_name": "单视频模板",
+      "value": {
+        "first_img": "",
+        "video_url": ""
+      }
+    },
+    "video_bottom": {
+      "type": "1",
+      "type_name": "图片轮播广告",
+      "value": [
+        {
+          "image": "",
+          "param": ""
+        }
+      ]
+    }
+  }
+}

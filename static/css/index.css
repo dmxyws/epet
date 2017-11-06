@@ -3,7 +3,7 @@
 }
 html,body{
   height: 100%;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 body{
   font-family: 'Microsoft Yahei',-apple-system-font,Helvetica Neue,sans-serif;

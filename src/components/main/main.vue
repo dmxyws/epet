@@ -1,5 +1,6 @@
 <template>
   <div class="main-wraper">
+    <main-header></main-header>
     <div class="all-double">
       <div class="db-schedule">
         <img src="./img/double-schedule.jpg">
@@ -151,6 +152,7 @@
 </template>
 
 <script>
+  import header from '../header/header.vue'
   import prevent from '../column/cl-prevent.vue'
   import brand from '../column/cl-brand.vue'
   import special from '../column/cl-special.vue'
@@ -162,6 +164,7 @@
       })
     },
     components: {
+      'main-header': header,
       prevent,
       brand,
       special

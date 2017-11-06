@@ -24,6 +24,7 @@
     .nav-list
       overflow hidden
       width 100%
+      background: #fff
       .nav-item
         position relative
         float left

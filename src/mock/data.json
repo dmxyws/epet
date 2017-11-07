@@ -296,6 +296,68 @@
     "video_bottom": {
       "image": "https://img2.epetbar.com/nowater/2017-10/25/13/0971a4c2afdbf3f2f339e76d5f2bf454.jpg@!water",
       "param": ""
+    },
+    "daily_crazy": {
+      "surprise_tit": {
+        "titimg": "//static.epetbar.com/static_web/wap/src/images/suprice.png",
+        "warning": "距离下一场",
+        "more": {
+          "image": "https://img2.epetbar.com/nowater/2017-11/02/09/3b8b4e66523f7e91abe01a2751bbb1d0.png",
+          "param": "https://wap.epet.com/surprise/Main.html?fw=0"
+        }
+      },
+      "surprise_pro": [
+        {
+          "proimg":"https://img1.epetbar.com/2013-10/25/55def3d471366986a06b7a5f8b1f9c8b.jpg",
+          "price": "3.30",
+          "save": "省￥29.70"
+        },
+        {
+          "proimg":"https://img1.epetbar.com/2017-08/24/15/80a1b909820eeb150c34bfab498328ee.jpg",
+          "price": "1.58",
+          "save": "省￥14.22"
+        },
+        {
+          "proimg":"https://img1.epetbar.com/2017-02/20/10/1bd1062d750a95c0bdb2babc62715ce2.jpg",
+          "price": "16.90",
+          "save": "省￥152.10"
+        },
+        {
+          "proimg":"https://img1.epetbar.com/2016-02/29/10/3c7de5b56531ab8cdb6f85bed6fc37a5.png",
+          "price": "1.08",
+          "save": "省￥9.72"
+        },
+        {
+          "proimg":"https://img1.epetbar.com/2015-08/03/ba650d6623fc03672d19c47dc137045c.jpg",
+          "price": "3.30",
+          "save": "省￥29.70"
+        },
+        {
+          "proimg":"https://img1.epetbar.com/2016-06/30/18/eac0cfd69057537baa704a43631a89ec.jpg",
+          "price": "5.50",
+          "save": "省￥49.50"
+        },
+        {
+          "proimg":"https://img1.epetbar.com/2015-12/24/10/de841c2aaad9033e8be90a33bd730277.jpg",
+          "price": "5.90",
+          "save": "省￥59.10"
+        },
+        {
+          "proimg":"https://img1.epetbar.com/2016-09/14/14/4c4d83c848021a40233f1edff0371cfb.jpg",
+          "price": "2.00",
+          "save": "省￥17.50"
+        },
+        {
+          "proimg":"https://img1.epetbar.com/2017-07/07/10/ed88fa3832d9a848c3bdd89a58618b7d.jpg",
+          "price": "3.50",
+          "save": "省￥31.50"
+        },
+        {
+          "proimg":"https://img1.epetbar.com/2017-08/25/10/e3950d2635f48b03185f107ded116ce4.jpg",
+          "price": "2.18",
+          "save": "省￥19.62"
+        }
+      ]
     }
   }
 }

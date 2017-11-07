@@ -30,9 +30,9 @@
         </div>
         <div class="db-daily-crazy">
           <div class="surprise">
-            <div class="surprise-tit">
-              <div class="titimg fl"><img src="./img/sp-title.png"></div>
-              <div class="prompt fl">距本场结束</div>
+            <div class="surprise-tit" v-if="double11.daily_crazy">
+              <div class="titimg fl"><img :src="double11.daily_crazy.surprise_tit.titimg"></div>
+              <div class="prompt fl">{{double11.daily_crazy.surprise_tit.warning}}</div>
               <div class="time fl">
                 <span class="time1-1">00</span>
                 <span class="time-zi">:</span>
@@ -40,55 +40,22 @@
                 <span class="time-zi">:</span>
                 <span class="time1-1">00</span>
               </div>
-              <div class="more"><a href="javascript:;"><img src="./img/sp-more.png"></a></div>
+              <div class="more">
+                <a :href="double11.daily_crazy.surprise_tit.more.param">
+                  <img :src="double11.daily_crazy.surprise_tit.more.image"></a>
+              </div>
             </div>
-            <div class="surprise-pro">
-              <ul class="swiper-container">
-                <li class="swiper-slide">
+            <div class="surprise-pro" ref="surpriseWrap">
+              <ul class="swiper-container" v-if="double11.daily_crazy">
+                <li class="swiper-slide" v-for="pro in double11.daily_crazy.surprise_pro">
                   <div class="pro-block">
                     <a href="javascript:;">
-                      <div class="pro-img"><img src="./img/sp-goods.jpg"></div>
+                      <div class="pro-img"><img :src="pro.proimg"></div>
                       <div class="price">
                         <span class="f12">￥</span>
-                        <span class="f14">1.98</span>
+                        <span class="f14">{{pro.price}}</span>
                       </div>
-                      <p class="save">省￥17.82</p>
-                    </a>
-                  </div>
-                </li>
-                <li class="swiper-slide">
-                  <div class="pro-block">
-                    <a href="javascript:;">
-                      <div class="pro-img"><img src="./img/sp-goods.jpg"></div>
-                      <div class="price">
-                        <span class="f12">￥</span>
-                        <span class="f14">1.98</span>
-                      </div>
-                      <p class="save">省￥17.82</p>
-                    </a>
-                  </div>
-                </li>
-                <li class="swiper-slide">
-                  <div class="pro-block">
-                    <a href="javascript:;">
-                      <div class="pro-img"><img src="./img/sp-goods.jpg"></div>
-                      <div class="price">
-                        <span class="f12">￥</span>
-                        <span class="f14">1.98</span>
-                      </div>
-                      <p class="save">省￥17.82</p>
-                    </a>
-                  </div>
-                </li>
-                <li class="swiper-slide">
-                  <div class="pro-block">
-                    <a href="javascript:;">
-                      <div class="pro-img"><img src="./img/sp-goods.jpg"></div>
-                      <div class="price">
-                        <span class="f12">￥</span>
-                        <span class="f14">1.98</span>
-                      </div>
-                      <p class="save">省￥17.82</p>
+                      <p class="save">{{pro.save}}</p>
                     </a>
                   </div>
                 </li>
@@ -153,14 +120,22 @@
             this.menu = mainData.menu
             this.double11 = mainData.data
             this.$nextTick(() => {
-              /* eslint-disable no-new */
-              new BScroll(this.$refs.doubleWraper, {
-                bounce: false,
-                click: true
-              })
+              this._initialScroll()
             })
           }
         })
+    },
+    methods: {
+      _initialScroll () {
+        /* eslint-disable no-new */
+        new BScroll(this.$refs.doubleWraper, {
+          bounce: false,
+          click: true
+        })
+        new BScroll(this.$refs.surpriseWrap, {
+          click: true
+        })
+      }
     },
     components: {
       'main-header': header,
@@ -268,13 +243,12 @@
               margin-bottom 10px
               overflow hidden
               .swiper-container
-                width 100%
                 white-space nowrap
                 float left
                 font-size 0
                 .swiper-slide
                   display inline-block
-                  width: 29%
+                  width: 4.64rem
                   .pro-block
                     padding: 0 7px
                     a

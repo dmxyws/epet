@@ -76,7 +76,7 @@
           </div>
           <div class="video-wraper">
             <div class="video-img">
-              <div class="play" ref="play" @click.once="play" v-if="double11.video"><img :src="double11.video.first_img"></div>
+              <div class="play" @click.once="play" ref="play" v-if="double11.video"><img :src="double11.video.first_img"></div>
               <div class="video-bt" v-if="double11.video_bottom"><img :src="double11.video_bottom.image"></div>
             </div>
           </div>
@@ -318,10 +318,10 @@
                 width 100%
               video
                 position absolute
-                width 100%
-                height 100%
                 top 0
                 left 0
+                width 100%
+                height: 100%
             .video-bt
               img
                 width 100%

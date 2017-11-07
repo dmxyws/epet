@@ -1,13 +1,14 @@
 <template>
   <div id="wrap">
-    <epet-main></epet-main>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
     <epet-footer></epet-footer>
   </div>
 </template>
 
 <script>
   import footer from './components/footer/footer-nav.vue'
-  import main from './components/main/main.vue'
   export default{
     mounted () {
       (function () {
@@ -18,8 +19,7 @@
       })()
     },
     components: {
-      'epet-footer': footer,
-      'epet-main': main
+      'epet-footer': footer
     }
   }
 </script>

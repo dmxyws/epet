@@ -1,8 +1,8 @@
 <template>
   <div class="footer-wrap">
     <ul class="nav-list">
-      <li class="nav-item"><a href="javascript:;" class="index-a"></a></li>
-      <li class="nav-item"><a href="javascript:;" class="type-a"></a></li>
+      <li class="nav-item"><router-link to="/main" class="index-a"></router-link></li>
+      <li class="nav-item"><router-link to="/type" class="type-a"></router-link></li>
       <li class="nav-item"><a href="javascript:;" class="cart-a"></a></li>
       <li class="nav-item"><a href="javascript:;" class="myepet-a"></a></li>
     </ul>
@@ -32,7 +32,7 @@
         height 45px
         .index-a
           vertical()
-          ft-bg-image("./img/img.png",0,0)
+          ft-bg-image("./img/img.png",-85px,0)
         .type-a
           vertical()
           ft-bg-image("./img/img.png",-85px,-40px)
@@ -42,4 +42,6 @@
         .myepet-a
           vertical()
           ft-bg-image("./img/img.png",-85px,-120px)
+        .router-link-active
+          background-position-x: 0
 </style>

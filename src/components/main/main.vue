@@ -76,7 +76,7 @@
           </div>
           <div class="video-wraper">
             <div class="video-img">
-              <a href="javascript:;" v-if="double11.video"><img :src="double11.video.first_img"></a>
+              <div class="play" ref="play" @click.once="play" v-if="double11.video"><img :src="double11.video.first_img"></div>
               <div class="video-bt" v-if="double11.video_bottom"><img :src="double11.video_bottom.image"></div>
             </div>
           </div>
@@ -133,8 +133,16 @@
           click: true
         })
         new BScroll(this.$refs.surpriseWrap, {
+          scrollX: true,
           click: true
         })
+      },
+      play () {
+        let video = document.createElement('video')
+        video.controls = 'controls'
+        video.innerHTML = '<source src="http://player.epetbar.com/1dd374ad065140699de0ab399057e981/13e66b24c35c49599ac6b793153e1baf-5287d2089db37e62345123a1be272f8b.mp4" type="video/ogg">' +
+          '<source src="http://player.epetbar.com/1dd374ad065140699de0ab399057e981/13e66b24c35c49599ac6b793153e1baf-5287d2089db37e62345123a1be272f8b.mp4" type="video/mp4">'
+        this.$refs.play.appendChild(video)
       }
     },
     components: {
@@ -302,11 +310,18 @@
           width 100%
           .video-img
             width 100%
-            a
-              display block
+            .play
+              position relative
+              width 100%
               img
                 display block
                 width 100%
+              video
+                position absolute
+                width 100%
+                height 100%
+                top 0
+                left 0
             .video-bt
               img
                 width 100%

@@ -4,7 +4,7 @@
       <li class="nav-item"><router-link to="/main" class="index-a"></router-link></li>
       <li class="nav-item"><router-link to="/type" class="type-a"></router-link></li>
       <li class="nav-item"><a href="javascript:;" class="cart-a"></a></li>
-      <li class="nav-item"><a href="javascript:;" class="myepet-a"></a></li>
+      <li class="nav-item"><router-link to="/login" class="type-a"></router-link></li>
     </ul>
   </div>
 </template>

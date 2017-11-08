@@ -130,7 +130,8 @@
         /* eslint-disable no-new */
         new BScroll(this.$refs.doubleWraper, {
           bounce: false,
-          click: true
+          click: true,
+          momentum: true
         })
         new BScroll(this.$refs.surpriseWrap, {
           scrollX: true,

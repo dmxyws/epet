@@ -16,7 +16,7 @@
             <span class="serach-ico"></span>
           </a>
         </p>
-        <a href="javascript:;" class="h-msg"><img src="./img/mydope.png"></a>
+        <a :href="'/#/login'" class="h-msg"><img src="./img/mydope.png"></a>
       </div>
     </div>
     <div class="nav-wrap" ref="navWrap">
